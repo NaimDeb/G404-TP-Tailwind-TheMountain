@@ -12,6 +12,9 @@ module.exports = {
         Roboto: ["Roboto", "sans-serif"],
         Rokkitt: ["Rokkitt", "sans-serif"],
       },
+      backgroundImage: {
+        'hero-img': "url('../images/bg_header.jpg')",
+      },
     },
   },
   plugins: [],

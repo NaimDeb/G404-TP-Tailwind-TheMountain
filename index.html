@@ -20,22 +20,38 @@
 </head>
 <body>
 
-    <header id="home" class="flex justify-center">
-        <img src="images/your_logo.png" alt="logo" class="w-32">
-        <i class="fas fa-bars w-32"></i>
+    <header id="home" class="bg-hero-img relative">
+    <div class="container mx-auto">
+        <nav class="flex justify-between">
+            <!-- Logo -->
+            <div class="flex items-center p-5">
+
+                <div class="flex justify-center items-center">
+                <img class="w-[50%]" src="images/your_logo.png" alt="Image signifiant le logo du site" />
+                <h4 class="text-[31px] font-thin">LOGO</h4>
+            </div>
+    
+            <!-- Menu hamburger -->
+            <i class="text-4xl fa-solid fa-bars mt-4"></i>
+    
+        </div>
+        </nav>
+    
+
+        <!-- Hero -->
+
+        <h1 class="text-center ">In the hall of the <strong>Mountain King</strong></h1>
+        <p class="text-center">This is a simple hero unit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis amet alias quaerat doloremque delectus possimus.</p>
+
+        <div class="flex flex_col">
+            <a href="#" class="bg-[#f52257] py-2 px-5 text-neutral-off-white">Learn More</a>
+            <a href="#" class="bg-[#36c4c5] py-2 px-5 text-neutral-off-white">Download</a>
+        </div>
+    </div>
     </header>
 
-    <!-- Hero -->
-    <div class="bg-[url('./images/bg_header.jpg')]">
 
-        <h1>In the hall of the <strong>Mountain King</strong></h1>
-
-        <p class="">This is a simple hero unit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis amet alias quaerat doloremque delectus possimus.</p>
-
-        <a href="#" class="bg-[#f52257] py-2 px-5 text-neutral-off-white">Learn More</a>
-        <a href="#" class="bg-[#36c4c5] py-2 px-5 text-neutral-off-white">Download</a>
-
-    </div>
+    
 
     <section id="features"></section>
     <section id="about"></section>
