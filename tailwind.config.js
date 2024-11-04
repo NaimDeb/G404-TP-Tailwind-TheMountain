@@ -8,6 +8,7 @@ module.exports = {
           'off-white': 'hsl(36, 100%, 99%)',
           'gray': 'hsl(0, 0%, 33%)',
           'bg-blue': 'hsl(197, 79%, 75%, 75%)',
+          'btn-red': 'hsl(345, 91%, 55%)'
       },
       },
       fontFamily: {
