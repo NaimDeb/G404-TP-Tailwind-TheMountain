@@ -20,6 +20,7 @@
 
     <title>Mountain</title>
   </head>
+
   <body>
     <header id="home" class="bg-hero-img bg-cover bg-no-repeat relative px-6">
       <div class="container mx-auto">
@@ -28,15 +29,15 @@
           <div class="flex items-center p-5">
             <div class="flex justify-center items-center">
               <img
-                class="w-[50%]"
+                class="w-[50%] sm:w-full"
                 src="images/your_logo.png"
                 alt="Image signifiant le logo du site"
               />
-              <h4 class="text-[31px] font-thin">LOGO</h4>
+              <h4 class="text-[31px] sm:text-[10vw] font-thin">LOGO</h4>
             </div>
 
             <!-- Menu hamburger -->
-            <i class="text-4xl fa-solid fa-bars mt-4"></i>
+            <i class="text-4xl fa-solid fa-bars mt-4 sm:absolute sm:top-2 sm:right-16"></i>
           </div>
         </nav>
 
@@ -45,8 +46,8 @@
         <div
           class="text-center font-Rokkitt leading-relaxed my-[50px] text-neutral-off-white"
         >
-          <h1 class="text-4xl font-Rokkitt px-16">In the hall of the</h1>
-          <p class="text-6xl font-bold font-Rokkit">Mountain King</p>
+          <h1 class="text-4xl sm:text-5xl font-Rokkitt px-16">In the hall of the</h1>
+          <p class="text-6xl sm:text-7xl font-bold font-Rokkit">Mountain King</p>
         </div>
 
         <p
@@ -56,15 +57,15 @@
           calling extra attention to featured content or information.
         </p>
 
-        <div class="flex flex-col font-Roboto pt-8 pb-36">
+        <div class="flex max-sm:flex-col font-Roboto pt-8 pb-36 sm:gap-2">
           <a
             href="#"
-            class="bg-[#36c4c5] py-2 px-5 w-[40%] text-neutral-off-white m-auto"
+            class="bg-[#36c4c5] py-2 px-5 w-[40%] sm:w-[20%] text-neutral-off-white m-auto block"
             >Learn More</a
           >
           <a
             href="#"
-            class="bg-[#f52257] py-2 px-5 w-[35%] text-neutral-off-white m-auto"
+            class="bg-[#f52257] py-2 px-5 w-[35%] sm:w-[20%] text-neutral-off-white m-auto block"
             >Download</a
           >
         </div>
@@ -116,9 +117,9 @@
 
     <!-- Section About -->
 
-    <section id="about" class="bg-about-img bg-cover bg-no-repeat px-4">
+    <section id="about" class="bg-about-img bg-cover bg-no-repeat px-4 sm:px-8">
       <div
-        class="bg-neutral-bg-blue text-neutral-off-white py-12 px-4 flex flex-col gap-5"
+        class="bg-neutral-bg-blue text-neutral-off-white py-12 px-4 sm:px-8 flex flex-col gap-5"
       >
         <h3 class="text-4xl font-Rokkitt">Ligula Mattis Ornare Ultricies</h3>
         <h4 class="text-2xl font-Rokkitt">
@@ -147,7 +148,7 @@
     </section>
 
     <!-- Section blog -->
-    <section id="blog" class="py-12 px-3">
+    <section id="blog" class="py-12 px-4 sm:px-8">
       <h2 class="font-Rokkitt text-neutral-gray text-5xl leading-11 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 
       <div class="text-neutral-gray font-Roboto leading-8 flex flex-col gap-3">
@@ -176,9 +177,9 @@
 
 
     <!-- Section history -->
-    <section id="history" class="bg-history-img bg-cover bg-no-repeat px-4">
+    <section id="history" class="bg-history-img bg-cover bg-no-repeat px-4 sm:px-8">
         <div
-          class="bg-neutral-bg-blue text-neutral-off-white py-12 px-4 flex flex-col gap-5 font-Roboto"
+          class="bg-neutral-bg-blue text-neutral-off-white py-12 px-4 sm:px-8 flex flex-col gap-5 font-Roboto"
         >
         <p class="italic text-lg font-light">Donec sed odio dui Integer posuere erat a ante venenatis dapibus posuere velit aliquet Praesent commodo cursus magna. vel scelerisque nisl consectetur et</p>
         <p class="leading-8 italic font-light">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
@@ -197,22 +198,21 @@
 
     <!-- Section photos -->
     <section id="photos" class="bg-[#dddddd] py-12">
-        <div class="flex flex-col gap-4">
-            <img src="./images/300.jpeg" alt="image 1" class="w-full">
-            <img src="./images/776.jpeg" alt="image 2" class="w-full">
-            <img src="./images/800.jpeg" alt="image 3" class="w-full">
-            <img src="./images/400.jpeg" alt="image 4" class="w-full">
-            <img src="./images/2476.jpeg" alt="image 5" class="w-full">
-            <img src="./images/439.jpeg" alt="image 6" class="w-full">
-            <img src="./images/140.jpeg" alt="image 7" class="w-full">
+        <div class="flex flex-col gap-4 sm:grid-cols-3 sm:grid sm:grid-rows-4 sm:items-stretch sm:max-h-[800px] sm:p-8 xl:px-20">
+            <img src="./images/300.jpeg" alt="image 1" class="w-full object-cover xl:col-span-2">
+            <img src="./images/776.jpeg" alt="image 2" class="w-full object-cover sm:row-span-4 xl:row-span-3 xl:col-start-3">
+            <img src="./images/800.jpeg" alt="image 3" class="w-full object-cover sm:row-span-3 xl:row-span-2 xl:row-start-2">
+            <img src="./images/400.jpeg" alt="image 4" class="w-full object-cover xl:row-start-2">
+            <img src="./images/2476.jpeg" alt="image 5" class="w-full object-cover sm:row-start-3 xl:col-start-2 xl:row-start-3">
+            <img src="./images/439.jpeg" alt="image 6" class="w-full object-cover sm:col-start-3 sm:row-start-4 xl:col-start-3 xl:row-start-4">
+            <img src="./images/140.jpeg" alt="image 7" class="w-full object-cover sm:col-start-1 sm:row-start-4 xl:col-span-2 xl:col-start-1 xl:row-start-4">
 
         </div>
     </section>
 
 
-
     <!-- Section partenaires -->
-    <section id="partenaires" class="px-4 py-12">
+    <section id="partenaires" class="px-4 sm:px-8 py-12">
 
         <img src="images/logo-sample-01.jpg" alt="logo1">
         <img src="images/logo-sample-02.jpg" alt="logo2">
@@ -234,7 +234,7 @@
         <p class="font-Roboto text-lg">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nist consectetur et. Praesent commodo cursus magna, vel scelerisque nist consectetur et</p>
 
         <!-- Your email here -->
-         <input type="text" placeholder="Your Email Here..." class="block w-full px-2 py-1 text-lg shadow-sm my-6">
+         <input type="text" placeholder="Your Email Here..." class="block w-full px-2 py-1 text-lg shadow-md my-6">
 
          <a href="" class="text-neutral-off-white bg-neutral-btn-red px-3 py-2 font-Roboto text-nowrap block w-1/2 my-[30px]">Submit Newsletter</a>
 
@@ -244,7 +244,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#24323b] px-4 py-12 text-neutral-off-white">
+    <footer class="bg-[#24323b] px-4 sm:px-8 py-12 text-neutral-off-white">
         <p class="text-3xl mb-[30px]">Your Logo</p>
 
         <p><i class="fas fa-copyright leading-4"></i> 2016 Your Company. Designed and Developed by <a href="#" class="text-neutral-text-link">The Maitre jet d'ail</a> </p>
