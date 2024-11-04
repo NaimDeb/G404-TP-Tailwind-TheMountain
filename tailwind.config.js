@@ -18,6 +18,7 @@ module.exports = {
       backgroundImage: {
         'hero-img': "url('../images/bg_header.jpg')",
         'about-img': "url('../images/bg_nuage.jpg')",
+        'history-img': "url('../images/bg_appareil_photo.jpg')",
       },
     },
   },
