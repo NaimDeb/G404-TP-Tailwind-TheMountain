@@ -6,7 +6,8 @@ module.exports = {
       colors:{
         neutral:{
           'off-white': 'hsl(36, 100%, 99%)',
-          'gray': 'hsl(0, 0%, 33%)'
+          'gray': 'hsl(0, 0%, 33%)',
+          'bg-blue': 'hsl(197, 79%, 75%, 75%)',
       },
       },
       fontFamily: {
@@ -15,6 +16,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-img': "url('../images/bg_header.jpg')",
+        'about-img': "url('../images/bg_nuage.jpg')",
       },
     },
   },
