@@ -9,7 +9,8 @@ module.exports = {
           'gray': 'hsl(0, 0%, 33%)',
           'bg-blue': 'hsl(197, 79%, 75%, 75%)',
           'btn-red': 'hsl(345, 91%, 55%)',
-          'bg-sombre': 'hsl(0, 0%, 8%, 0.4)'
+          'bg-sombre': 'hsl(0, 0%, 8%, 0.6)',
+          'text-link': '#31c7c6'
       },
       },
       fontFamily: {
