@@ -6,6 +6,7 @@ module.exports = {
       colors:{
         neutral:{
           'off-white': 'hsl(36, 100%, 99%)',
+          'gray': 'hsl(0, 0%, 33%)'
       },
       },
       fontFamily: {
